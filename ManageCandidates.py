@@ -14,27 +14,27 @@ class CandidateManager:
         self._load()
 
 #Load the Candidate.csv
-def _load(self):
-    if not os.path.exists(self.filepath):
-        self._save()
-        return
-    with open(self.filepath, newline="", encoding="utf-8") as f:
-        reader = csv.reader(f)
-        next(reader, None)
-        for row in reader:
-            if not row:
-                continue
-            cid, name, seat = row[0], row[1], row[2]
-            self.candidates[cid] = Candidate(cid, name, seat)
-            self.seat_to_id[seat] = cid
+    def _load(self):
+        if not os.path.exists(self.filepath):
+            self._save()
+            return
+        with open(self.filepath, newline="", encoding="utf-8") as f:
+            reader = csv.reader(f)
+            next(reader, None)
+            for row in reader:
+                if not row:
+                    continue
+                cid, name, seat = row[0], row[1], row[2]
+                self.candidates[cid] = Candidate(cid, name, seat)
+                self.seat_to_id[seat] = cid
 
 # Save the Candidate.csv
-def _save(self):
-    with open(self.filepath, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(CANDIDATE_HEADER)
-        for c in self.candidates.values():
-            writer.writerow(c.to_row())
+    def _save(self):
+        with open(self.filepath, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(CANDIDATE_HEADER)
+            for c in self.candidates.values():
+                writer.writerow(c.to_row())
 
 #Add a candidate
     def add_candidate(self, candidate_id, first_name, seat_number):

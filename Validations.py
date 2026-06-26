@@ -15,17 +15,20 @@ class Voter:
         self.district = district
         self.age = age
 # Validate voter ID
+    @staticmethod
     def validate_voter_id(voter_id):
         if not (isinstance(voter_id, str) and len(voter_id) == 10 and voter_id.isdigit()):
             raise ValidationError("Invalid Voter Id: must be exactly 10 digits.")
         return voter_id
 # Validate district
+    @staticmethod
     def validate_district(district):
         for d in DISTRICTS:
             if d.lower() == str(district).strip().lower():
                 return d
         raise ValidationError("Invalid District: must be one of the 25 Sri Lankan districts.")
 # Validate age
+    @staticmethod
     def validate_age(age):
         try:
             age_int = int(age)
@@ -48,12 +51,21 @@ class Candidate:
         self.candidate_id = candidate_id
         self.first_name = first_name
         self.seat_number = seat_number
+
+ #Validate Candidate ID
+    @staticmethod
+    def validate_candidate_id(candidate_id):
+        if not (isinstance(candidate_id, str) and len(candidate_id) == 10 and candidate_id.isdigit()):
+            raise ValidationError("Invalid Candidate Id: must be exactly 10 digits.")
+        return candidate_id
 #Validate first Name
+    @staticmethod
     def validate_first_name(first_name):
         if not (isinstance(first_name, str) and 1 <= len(first_name) <= 10 and first_name.isalpha()):
             raise ValidationError("Invalid First Name: letters only, max 10 characters.")
         return first_name
 # Validate Seat Number
+    @staticmethod
     def validate_seat_number(seat_number):
         if not (isinstance(seat_number, str) and len(seat_number) == 2 and seat_number.isdigit()):
             raise ValidationError("Invalid Seat Number: must be exactly 2 digits (e.g. 01).")
@@ -76,6 +88,7 @@ class Ballot:
         self.voter_age = voter_age
         self.district = district
 #Validate date
+    @staticmethod
     def validate_date(date_str):
         try:
             datetime.strptime(date_str, "%Y-%m-%d")
