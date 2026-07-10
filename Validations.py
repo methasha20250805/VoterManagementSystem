@@ -35,7 +35,7 @@ class Voter:
         except (ValueError, TypeError):
             raise ValidationError("Invalid Age: must be numeric.")
         if age_int < 0 or age_int > 120:
-            raise ValidationError("Invalid Age: out of realistic range.")
+            raise ValidationError("Invalid Age")
         return age_int
 
     def to_row(self):
@@ -93,7 +93,7 @@ class Ballot:
         try:
             datetime.strptime(date_str, "%Y-%m-%d")
         except (ValueError, TypeError):
-            raise ValidationError("Invalid Date: must be in yyyy-mm-dd format.")
+            raise ValidationError("Invalid: must be in yyyy-mm-dd format.")
         return date_str
 
     def to_row(self):
