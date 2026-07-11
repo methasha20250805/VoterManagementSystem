@@ -148,7 +148,7 @@ def main():
         print("3. Cast a Vote")
         print("4. Delete a Vote")
         print("5. Trend Graph")
-        print("0. Exit")
+        print("6. Exit")
         choice = input("Choose an option: ").strip()
 
         if choice == "1":
@@ -161,7 +161,7 @@ def main():
             delete_vote_flow(bm)
         elif choice == "5":
             trend_graph_flow(bm)
-        elif choice == "0":
+        elif choice == "6":
             print("Goodbye!")
             break
         else:
