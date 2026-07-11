@@ -147,7 +147,7 @@ def main():
         print("2. Candidate Registration")
         print("3. Cast a Vote")
         print("4. Delete a Vote")
-        print("5. Trend Graph (votes per candidate)")
+        print("5. Trend Graph")
         print("0. Exit")
         choice = input("Choose an option: ").strip()
 
