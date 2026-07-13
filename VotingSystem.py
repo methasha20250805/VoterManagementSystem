@@ -19,7 +19,7 @@ def voter_menu(vm: VoterManager):
         print("2. Edit Voter")
         print("3. Search Voter")
         print("4. Delete Voter")
-        print("0. Back")
+        print("5. Back")
         choice = input("Choose an option: ").strip()
 
         try:
@@ -50,7 +50,7 @@ def voter_menu(vm: VoterManager):
                 vm.delete_voter(voter_id)
                 print("Voter deleted successfully.")
 
-            elif choice == "0":
+            elif choice == "5":
                 break
             else:
                 print("Invalid option.")
