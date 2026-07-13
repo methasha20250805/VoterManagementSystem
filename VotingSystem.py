@@ -66,7 +66,7 @@ def candidate_menu(cm: CandidateManager):
             print("1. Add Candidate")
             print("2. View Candidate")
             print("3. View All Candidates")
-            print("0. Back")
+            print("4. Back")
             choice = input("Choose an option: ").strip()
 
             try:
@@ -89,7 +89,7 @@ def candidate_menu(cm: CandidateManager):
                     for c in candidates:
                         print(c)
 
-                elif choice == "0":
+                elif choice == "4":
                     break
                 else:
                     print("Invalid option.")
