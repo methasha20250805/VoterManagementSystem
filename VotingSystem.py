@@ -78,7 +78,7 @@ def candidate_menu(cm: CandidateManager):
                     print(f"Candidate added successfully: {candidate}")
 
                 elif choice == "2":
-                    candidate_id = input("Candidate Id to view: ").strip()
+                    candidate_id = input("Candidate Id: ").strip()
                     candidate = cm.view_candidate(candidate_id)
                     print(f"Found: {candidate}")
 
