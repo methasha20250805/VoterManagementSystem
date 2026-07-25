@@ -14,7 +14,7 @@ def show_districts():
 #Display Voter Menu
 def voter_menu(vm: VoterManager):
     while True:
-        print("\n--- Voter Registration ---")
+        print("\nVoter Registration")
         print("1. Add Voter")
         print("2. Edit Voter")
         print("3. Search Voter")
@@ -62,7 +62,7 @@ def voter_menu(vm: VoterManager):
 #Display Candidate Menu
 def candidate_menu(cm: CandidateManager):
         while True:
-            print("\n--- Candidate Registration ---")
+            print("\n Candidate Registration")
             print("1. Add Candidate")
             print("2. View Candidate")
             print("3. View All Candidates")
