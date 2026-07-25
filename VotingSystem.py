@@ -67,7 +67,7 @@ def candidate_menu(cm: CandidateManager):
             print("2. View Candidate")
             print("3. View All Candidates")
             print("4. Back")
-            choice = input("Choose an option: ").strip()
+            choice = input("Enter the option: ").strip()
 
             try:
                 if choice == "1":
