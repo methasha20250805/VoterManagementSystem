@@ -149,7 +149,7 @@ def main():
         print("4.Delete a Vote")
         print("5.Trend Graph")
         print("6.Exit")
-        choice = input("Choose an option: ").strip()
+        choice = input("Input an option: ").strip()
 
         if choice == "1":
             voter_menu(vm)
