@@ -100,7 +100,7 @@ def candidate_menu(cm: CandidateManager):
 
 # Voting options
 def cast_vote_flow(bm: BallotManager):
-    print("\n--- Cast a Vote ---")
+    print("\nCast a Vote")
     try:
         date = input("Date (yyyy-mm-dd): ").strip()
         voter_id = input("Voter Id: ").strip()
