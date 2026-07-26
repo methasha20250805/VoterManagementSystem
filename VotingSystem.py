@@ -124,7 +124,7 @@ def delete_vote_flow(bm: BallotManager):
 
 
 def trend_graph_flow(bm: BallotManager):
-    print("\n--- Trend Graph ---")
+    print("\nTrend Graph")
     try:
         result_df = bm.plot_trend_graph(save_path="vote_trend.html", show=False)
         print(result_df.to_string(index=False))
