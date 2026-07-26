@@ -143,12 +143,12 @@ def main():
 
     while True:
         print("\nVoting System")
-        print("1. Voter Registration")
-        print("2. Candidate Registration")
-        print("3. Cast a Vote")
-        print("4. Delete a Vote")
-        print("5. Trend Graph")
-        print("6. Exit")
+        print("1.Voter Registration")
+        print("2.Candidate Registration")
+        print("3.Cast a Vote")
+        print("4.Delete a Vote")
+        print("5.Trend Graph")
+        print("6.Exit")
         choice = input("Choose an option: ").strip()
 
         if choice == "1":
