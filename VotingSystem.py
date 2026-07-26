@@ -113,7 +113,7 @@ def cast_vote_flow(bm: BallotManager):
 
 
 def delete_vote_flow(bm: BallotManager):
-    print("\n--- Delete a Vote ---")
+    print("\nDelete a Vote")
     try:
         voter_id = input("Voter Id: ").strip()
         bm.delete_vote(voter_id)
