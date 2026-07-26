@@ -128,7 +128,7 @@ def trend_graph_flow(bm: BallotManager):
     try:
         result_df = bm.plot_trend_graph(save_path="vote_trend.html", show=False)
         print(result_df.to_string(index=False))
-        print("\nGraph saved to vote_trend.html (open it in a browser to view).")
+        print("\nGraph saved to vote_trend.html (Open it in a browser to view).")
     except ValidationError as e:
         print(f"Error: {e}")
     except ImportError as e:
