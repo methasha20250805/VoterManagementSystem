@@ -24,7 +24,7 @@ def voter_menu(vm: VoterManager):
 
         try:
             if choice == "1":
-                voter_id = input("Voter Id (10 digits): ").strip()
+                voter_id = input("Voter Id (Exactly 10 digits): ").strip()
                 show_districts()
                 district = input("District: ").strip()
                 age_input = input(f"Age (press Enter for default {AGE}): ").strip()
