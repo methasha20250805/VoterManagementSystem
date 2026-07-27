@@ -7,7 +7,7 @@ def pause():
     input("\nPress Enter to continue")
 
 def show_districts():
-    print("\nValid Districts:")
+    print("\nValid Districts: ")
     for i in range(0, len(DISTRICTS), 5):
         print("  " + ", ".join(DISTRICTS[i:i + 5]))
 
