@@ -117,7 +117,7 @@ def delete_vote_flow(bm: BallotManager):
     try:
         voter_id = input("Voter Id: ").strip()
         bm.delete_vote(voter_id)
-        print("Vote deleted successfully. Voter may now cast a new vote.")
+        print("Vote deleted successfully. Voter can now cast a new vote.")
     except ValidationError as e:
         print(f"Error: {e}")
     pause()
