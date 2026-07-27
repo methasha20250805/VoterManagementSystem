@@ -132,7 +132,7 @@ def trend_graph_flow(bm: BallotManager):
     except ValidationError as e:
         print(f"Error: {e}")
     except ImportError as e:
-        print(f"Missing library: {e}. Run: pip install pandas numpy plotly")
+        print(f"Library is missing. : {e}. Run: pip install pandas numpy plotly")
     pause()
 
 # Main Menu
