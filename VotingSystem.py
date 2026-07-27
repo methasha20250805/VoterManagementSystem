@@ -15,11 +15,11 @@ def show_districts():
 def voter_menu(vm: VoterManager):
     while True:
         print("\nVoter Registration")
-        print("1. Add Voter")
-        print("2. Edit Voter")
-        print("3. Search Voter")
-        print("4. Delete Voter")
-        print("5. Back")
+        print("1.Add Voter")
+        print("2.Edit Voter")
+        print("3.Search Voter")
+        print("4.Delete Voter")
+        print("5.Back")
         choice = input("Choose an option: ").strip()
 
         try:
