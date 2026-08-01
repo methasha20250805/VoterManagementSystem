@@ -36,7 +36,7 @@ def voter_menu(vm: VoterManager):
                 voter_id = input("Voter Id to edit: ").strip()
                 show_districts()
                 new_district = input("New District (Press enter to skip): ").strip()
-                new_age = input("New Age (Enter to skip): ").strip()
+                new_age = input("New Age (Press enter to skip): ").strip()
                 voter = vm.edit_voter(voter_id, new_district or None, new_age or None)
                 print(f"Voter updated successfully: {voter}")
 
