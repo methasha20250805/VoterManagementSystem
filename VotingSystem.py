@@ -102,7 +102,7 @@ def candidate_menu(cm: CandidateManager):
 def cast_vote_flow(bm: BallotManager):
     print("\nCast a Vote")
     try:
-        date = input("Date (yyyy-mm-dd): ").strip()
+        date = input("Date (YYYY - MM - DD): ").strip()
         voter_id = input("Voter Id: ").strip()
         seat_number = input("Candidate Seat Number (2 digits): ").strip()
         ballot = bm.cast_vote(date, voter_id, seat_number)
