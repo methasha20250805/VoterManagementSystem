@@ -85,7 +85,7 @@ def candidate_menu(cm: CandidateManager):
                 elif choice == "3":
                     candidates = cm.list_all()
                     if not candidates:
-                        print("No candidates registered yet.")
+                        print("No candidates have registered yet.")
                     for c in candidates:
                         print(c)
 
