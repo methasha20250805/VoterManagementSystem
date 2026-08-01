@@ -162,7 +162,7 @@ def main():
         elif choice == "5":
             trend_graph_flow(bm)
         elif choice == "6":
-            print("Goodbye!")
+            print("Thankyou for your votes!")
             break
         else:
             print("Invalid option, please try again.")
