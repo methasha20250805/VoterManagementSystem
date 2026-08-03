@@ -72,7 +72,7 @@ def candidate_menu(cm: CandidateManager):
             try:
                 if choice == "1":
                     candidate_id = input("Candidate Id (Only 10 digits): ").strip()
-                    first_name = input("First Name (letters only, max 10 chars): ").strip()
+                    first_name = input("First Name (letters only, maximum 10 characters): ").strip()
                     seat_number = input("Seat Number (only 2 digits, e.g. 01): ").strip()
                     candidate = cm.add_candidate(candidate_id, first_name, seat_number)
                     print(f"Candidate added successfully: {candidate}")
