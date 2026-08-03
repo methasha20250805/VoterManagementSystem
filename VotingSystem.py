@@ -106,7 +106,7 @@ def cast_vote_flow(bm: BallotManager):
         voter_id = input("Voter Id: ").strip()
         seat_number = input("Candidate Seat Number (2 digits): ").strip()
         ballot = bm.cast_vote(date, voter_id, seat_number)
-        print(f"Vote cast successfully: {ballot}")
+        print(f"Voting was successful.: {ballot}")
     except ValidationError as e:
         print(f"Error: {e}")
     pause()
