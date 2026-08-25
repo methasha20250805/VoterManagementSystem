@@ -4,7 +4,7 @@ from ManageCandidates import CandidateManager
 from ManageBallots import BallotManager
 
 def pause():
-    input("\nPress Enter to continue")
+    input("\n Press Enter to continue ")
 
 def show_districts():
     print("\nValid Districts: ")
