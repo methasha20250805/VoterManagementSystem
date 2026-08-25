@@ -142,7 +142,7 @@ def main():
     bm = BallotManager(vm, cm)
 
     while True:
-        print("\nVoting System")
+        print("\n --- Voting System ---")
         print("1.Voter Registration")
         print("2.Candidate Registration")
         print("3.Cast a Vote")
