@@ -135,7 +135,7 @@ def trend_graph_flow(bm: BallotManager):
         print(f"Library is missing. : {e}. Run: pip install pandas numpy plotly")
     pause()
 
-# Main Menu
+# Main Menu page
 def main():
     vm = VoterManager()
     cm = CandidateManager()
