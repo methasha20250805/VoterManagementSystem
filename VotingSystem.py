@@ -59,7 +59,7 @@ def voter_menu(vm: VoterManager):
             print(f"Error: {e}")
         pause()
 
-#Display Candidate Menu
+# Displaying Candidate Menu
 def candidate_menu(cm: CandidateManager):
         while True:
             print("\n Candidate Registration")
