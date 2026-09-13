@@ -16,7 +16,7 @@ def voter_menu(vm: VoterManager):
     while True:
         print("\nVoter Registration")
         print("1.Add a Voter")
-        print("2.Editing Voter")
+        print("2.Edit a Voter")
         print("3.Search Voter")
         print("4.Delete Voter")
         print("5.Back")
